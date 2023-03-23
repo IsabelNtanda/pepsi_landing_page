@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing page pepsi</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+/>
+</head>
+<body>
+  <section class="sec">
+    <header>
+      <a href=""><img src="./assets/img/logo.png" alt="" class="logo"></a>
+      <div class="bx bx-menu" id="menu-icon" onclick="menuToggle()"></div>
+      <ul class="navbar">
+        <li><a href="">Home</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="#">What's New</a></li>
+        <li><a href="">Newsletter</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>That's <br> <span>I like</span></h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero pariatur accusantium blanditiis adipisci! Rerum, sunt pariatur molestiae aliquam earum iste.</p>
+        <a href="#">View All Products</a>
+      </div>
+      <div class="imgBox">
+        <img src="./assets/img/pepsi001.png" alt="" class="pepsi">
+      </div>
+    </div>
+    <ul class="thumb">
+      <li><img src="./assets/img/pepsi001.png" onclick="imgSlider('./assets/img/pepsi001.png');channgeBgColor('#0062b2') "  alt=""></li>
+      <li><img src="./assets/img/pepsi002.png" onclick="imgSlider('./assets/img/pepsi002.png');channgeBgColor('#e60c2c') "    alt=""></li>
+      <li><img src="./assets/img/pepsi003.png" onclick="imgSlider('./assets/img/pepsi003.png');channgeBgColor('#1e1e1e') "   alt=""></li>
+    </ul>
+    <ul class="social">
+      <li><a href=""><img src="./assets/img/twitter.png" alt=""></a></li>
+      <li><a href=""><img src="./assets/img/instagram.png" alt=""></a></li>
+      <li><a href=""><img src="./assets/img/facebook.png" alt=""></a></li>
+      
+    </ul>
+  </section>
+ <script src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0062b2;
+  transition: 0.5s;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .bx-menu {
+  position: relative;
+  font-size: 4rem;
+  z-index: 2;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+header .logo {
+  position: relative;
+  max-width: 8rem;
+}
+header ul {
+  position: relative;
+  display: flex;
+}
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  display: inline-block;
+  color: #fff;
+  font-weight: 400;
+  margin-left: 4rem;
+  text-decoration: none;
+}
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .textBox {
+  position: relative;
+  max-width: 60rem;
+}
+.content .textBox h2 {
+  color: #fff;
+  font-size: 4em;
+  line-height: 1.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.content .textBox h2 span {
+  font-size: 2em;
+}
+.content .textBox p {
+  color: #fff;
+}
+.content .textBox a {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  background-color: #fff;
+  color: #111;
+  border-radius: 4rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.content .textBox a:hover {
+  transform: scale(1.1);
+}
+.content .imgBox {
+  width: 60rem;
+  display: flex;
+  padding-right: 5rem;
+  justify-content: flex-end;
+  margin-top: 5rem;
+}
+.content .imgBox img {
+  max-width: 26rem;
+}
+.thumb {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.thumb li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.thumb li:hover {
+  transform: translateY(-15px);
+}
+.thumb li img {
+  max-width: 4rem;
+}
+.social {
+  position: absolute;
+  top: 50%;
+  right: 3rem;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  filter: invert(1);
+  margin: 0.5rem 0;
+  transform: scale(0.6);
+}
+
+@media (max-width: 991px) {
+  
+  section {
+   padding: 4rem;
+   padding-bottom: 14rem;
+  }
+  header{
+    padding: 2rem 4rem;
+  }
+  header .logo {
+    position: relative;
+    max-width: 6rem;
+  }
+  header ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0062b2;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  header .navbar.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  header ul li a {
+    display: inline-block;
+    color: #fff;
+    margin-left: 0;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 1rem 0;
+    transition: 0.3s;
+  }
+
+  header ul li a:hover {
+    color: #ed0223;
+  }
+  header .bx-menu {
+    display: initial;
+  }
+  .content {
+    flex-direction: column;
+    margin-top: 8rem;
+  }
+  .content .textBox {
+    position: relative;
+    max-width: 100%;
+    padding-right: 2rem;
+  }
+
+  .content .textBox h2 {
+    font-size: 3em;
+  }
+  .content .textBox a {
+    font-size: 1.4rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .content .imgBox {
+    width: 100%;
+    display: flex;
+    padding-right: 0;
+    margin-top: 5rem;
+    justify-content: center;
+  }
+
+  .content .imgBox img {
+    max-width: 15rem;
+  }
+
+  .thumb li img{
+  max-width: 3rem;
+  }
+  .social{
+    right:0;
+  width: 5rem;
+  background-color: rgba(0,0,0,0.2);
+  }
+}
